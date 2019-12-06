@@ -1,0 +1,51 @@
+﻿@model DFIdari.Models.Personel
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Personel</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.BolumId)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.BolumId)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Adi)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Adi)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Yas)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Yas)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Gorev)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Gorev)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.Id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
